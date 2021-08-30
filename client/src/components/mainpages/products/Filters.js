@@ -38,8 +38,9 @@ function Filters() {
             <div className="row sort">
                 <span>Sắp xếp: </span>
                 <select value={sort} onChange={e => setSort(e.target.value)} >
+                    <option value=''>Mặc định</option>
                     <option value='sort=-sold'>Bán chạy</option>
-                    <option value=''>Mới nhất</option>
+                    <option value='sort=-createdAt'>Mới nhất</option>
                     <option value='sort=-price'>Giá: Cao-Thấp</option>
                     <option value='sort=price'>Giá: Thấp-Cao</option>
                 </select>
